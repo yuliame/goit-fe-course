@@ -1,12 +1,14 @@
 ul li{
     display: inline-block;
     width: 210px;
+    text-align: center;
     text-transform: uppercase;
     font-size: 14px;
     font-family: "Playfair Display", serif;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     margin-top: 60px;
 }
+
 header {
     width: 100%;
 }
@@ -20,10 +22,6 @@ a:hover {
     color: blue;
 }
 
-li {
-    text-align: center;
-}
-
 .blog-article {
     display: inline-block;
     width: 420px;
@@ -35,10 +33,6 @@ main {
     width: 100%;
 }
 
-h4 {
-    text-align: left;
-}
-
 .wrapper {
     width: 930px;
     margin: 0 auto;
@@ -46,14 +40,26 @@ h4 {
 
 button {
     display: block;
-    margin: 0 auto;
-    padding: 18px 48px;
+    width: 165px;
+    height: 60px;
+    padding: 14px 33px;
     font-family: "Playfair Display", serif;
     font-size: 20px;
-    background-color: white;
+    background-color: #ffffff;
     color:#626262;
-    border: 1px solid;
+    border: 1px solid #626262;
+    margin: 0 auto;
+    cursor: pointer;
+    outline: none;
+}
 
+button:hover {
+    background-color: #626262;
+    color: #ffffff;
+}
+
+button:active {
+  transform: translateY(1px);
 }
 
 .section-title {
@@ -63,6 +69,7 @@ button {
     font-size: 14px;
     font-weight: 200;
 }
+
 .article-title {
     font-family: "Playfair Display", serif;
     color: #626262;
@@ -73,4 +80,8 @@ button {
 .text-content {
     font-family: "Playfair Display", serif;
     color: #626262;
+}
+
+.additional-info {
+    margin-top: 50px;
 }
