@@ -64,6 +64,7 @@ main {
     font-family: "Playfair Display", serif;
     font-size: 14px;
     color: #626262;
+    line-height: 25px;
 }
 
 .additional-info {
