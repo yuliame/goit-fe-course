@@ -1,10 +1,12 @@
 .wrapper {
     width: 920px;
     margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 header {
-    padding: 45px;
+    padding-top: 78px;
+    padding-bottom: 104px;
 }
 
 .menu {
@@ -44,15 +46,15 @@ img {
 .blog-article {
     display: inline-block;
     width: 45.7%;
-    padding-bottom: 130px; 
+    margin-bottom: 130px; 
 }
 
 .blog-article:nth-last-of-type(-n+2) {
-    padding-bottom: 58px;
+    margin-bottom: 58px;
 }
 
 .blog-article:nth-child(odd) {
-    padding-right: 75px; 
+    margin-right: 75px; 
 }
 
 .section-title {
@@ -83,7 +85,6 @@ img {
 
 .additional-info {
     margin: 0 auto;
-    padding-bottom: 50px;
     width: 25%;
 }
 
