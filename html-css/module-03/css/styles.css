@@ -1,20 +1,11 @@
 .wrapper {
-    width: 930px;
+    width: 920px;
     margin: 0 auto;
 }
-/*
-nav {
-    width: 570px;
-    margin: 0 auto;
+
+header {
+    padding: 45px;
 }
-/*
-.menu {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-}
-*/
 
 .menu {
     width: 100%;
@@ -25,12 +16,11 @@ nav {
 
 .menu-item{
     display: inline-block;
-    width: 15%;
+    width: 20%;
     list-style: none;    
     text-transform: uppercase;
     font-size: 14px;
     font-family: "Playfair Display", serif;
-    padding: 45px;
 }
 
 a {
@@ -47,11 +37,24 @@ main {
     width: 100%;
 }
 
+img {
+    margin-bottom: 30px;
+}
+
 .blog-article {
     display: inline-block;
-    width: 45%;
-    padding: 20px;
+    width: 45.7%;
+    padding-bottom: 130px; 
 }
+
+.blog-article:nth-last-of-type(-n+2) {
+    padding-bottom: 58px;
+}
+
+.blog-article:nth-child(odd) {
+    padding-right: 75px; 
+}
+
 .section-title {
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
@@ -80,7 +83,7 @@ main {
 
 .additional-info {
     margin: 0 auto;
-    padding: 50px;
+    padding-bottom: 50px;
     width: 25%;
 }
 
@@ -98,6 +101,7 @@ button {
     cursor: pointer;
     outline: none;
 }
+
 
 button:hover {
     background-color: #626262;
