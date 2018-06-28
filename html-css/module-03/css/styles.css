@@ -1,5 +1,12 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+
+
 .wrapper {
-    width: 920px;
+    width: 919px;
     margin: 0 auto;
     padding-bottom: 50px;
 }
@@ -37,6 +44,15 @@ a:hover {
 
 main {
     width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    padding-bottom: 130px;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 0;
+
 }
 
 img {
@@ -45,16 +61,12 @@ img {
 
 .blog-article {
     display: inline-block;
-    width: 45.7%;
-    margin-bottom: 130px; 
-}
+    width: 46.19%;
 
-.blog-article:nth-last-of-type(-n+2) {
-    margin-bottom: 58px;
 }
 
 .blog-article:nth-child(odd) {
-    margin-right: 75px; 
+    margin-right: 70px; 
 }
 
 .section-title {
@@ -80,19 +92,16 @@ img {
     font-size: 14px;
     color: #626262;
     line-height: 25px;
-    margin: 0;
+    margin: 0 auto;
 }
 
-.additional-info {
+footer {
     margin: 0 auto;
-    width: 25%;
 }
 
 button {
     display: block;
     margin: 0 auto;
-    width: 165px;
-    height: 60px;
     padding: 14px 33px;
     font-family: "Playfair Display", serif;
     font-size: 20px;
