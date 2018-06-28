@@ -54,10 +54,11 @@ img {
 .blog-article {
     display: inline-block;
     width: 46.19%;
+    max-width: 420px;
 }
 
 .blog-article:nth-child(odd) {
-    margin-right: 70px; 
+    margin-right: 79px; 
 }
 
 .section-title {
