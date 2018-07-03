@@ -206,7 +206,7 @@ a {
     width:100%;
     max-width: 351px;
     margin-right: 33.5px;
-
+    font-size: 0;
 }
 
 .blog-article:last-child {
