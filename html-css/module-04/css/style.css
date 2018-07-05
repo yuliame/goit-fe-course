@@ -43,7 +43,7 @@ header {
     font-size: 14px;
     list-style: none;
     margin-right: 32px;
-    margin-top:8px;
+    line-height: 38px;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -104,7 +104,6 @@ a {
 .product-card {
     float: left;
     margin-right: 33px;
-    margin-bottom: 30px;
     margin-left: 0;
     max-height: 323px;
 }
@@ -119,6 +118,7 @@ a {
 
 .first-line-cards {
     overflow: hidden;
+    padding-bottom: 30px;
 }
 .second-line-cards {
     overflow: hidden;
@@ -214,13 +214,17 @@ a {
     margin-right: 0;
 }
 
+.blog-article img {
+    margin-bottom: 8px;
+}
+
 .blog-name {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: 18px;
     margin-top:0;
     margin-right: 0;
-    padding-top: 8px;
+    margin-bottom: 40px;
     position: relative;
 }
 
@@ -238,7 +242,6 @@ a {
     font-family: "Open Sans" , sans-serif;
     font-size: 13px;
     margin-top:0;
-    padding-top: 21px;
     margin-bottom: 10px;
     line-height: 25px;
 
