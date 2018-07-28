@@ -5,16 +5,20 @@ body {
 }
 
 .wrapper {
-    width: 1600px;
+    max-width: 1600px;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
 }
 
 header {
-    height: 91px;
-    width: 1120px;
+    max-height: 91px;
+    height: 100%;
+    max-width: 1120px;
+    width: 100%;
     margin: 0 auto;
     line-height: 97px;
+    overflow: hidden;
 }
 
 .logo {
@@ -31,6 +35,10 @@ header {
     color: #1abc9c;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
+}
+
+nav {
+    overflow: hidden;
 }
 
 .menu-list {
@@ -307,7 +315,6 @@ button:active {
 footer {
     background-color: #323232;
     text-align: center;
-    padding: 33px;
 }
 
 .company-info {
@@ -315,6 +322,7 @@ footer {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     color: #fefefe;
+    padding: 33px;
 }
 
 .company-name {
