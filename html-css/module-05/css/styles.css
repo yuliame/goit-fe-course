@@ -77,22 +77,24 @@ a {
 
 .slider-text {
     position: absolute;
-    bottom: 43%;
+    bottom: 46%;
     right: 27%;
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     color: #ffffff;
-    line-height: 21px;
 }
 
 h2 {
     font-size: 58px;
     font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 18px;
 }
 
 p {
     font-size: 23px;
     font-weight: 200;
+    margin: 0;
 }
 
 
@@ -305,10 +307,10 @@ button:active {
 footer {
     background-color: #323232;
     text-align: center;
+    padding: 33px;
 }
 
 .company-info {
-    line-height: 88px;
     margin: 0 auto;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
