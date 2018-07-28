@@ -161,24 +161,26 @@ button:active {
     margin-right: 33px;
     margin-left: 0;
     max-height: 323px;
+    cursor: pointer;
+    position: relative;
 }
 
 .product-card:last-child {
     margin-right: 0;
 }
 
-.product-card:hover {
-    cursor: pointer;
+.product-card:hover .card-additional-info {
+    display: block;
 }
 
 .product-card:hover .product-name {
     background-color:#1abc9c;
-    cursor: pointer;
+    
 }
 
 .product-card:hover .product-price {
     background-color:#7fd9c7;
-    cursor: pointer;
+    
 }
 
 .product-name {
@@ -234,12 +236,17 @@ footer {
     position: relative;
     z-index: 1;
 }
+
+.product-card-layers {
+    font-size: 0;
+}
+
 .card-additional-info {
     position: absolute;
     width: 255px;
     height: 323px;
-    top: 209.4%;
-    left: 15.15%;
+    top: 0;
+    left: 0;
     background-color: rgba(255, 255, 255, 0.35);
     z-index: 2;
 }
@@ -258,13 +265,18 @@ footer {
 .additional-options {
     position: absolute;
     top: 27%;
-    right: 12%;
+    right: 7%;
 }
 
 .favourite , .arrows-button , .time-button {
-    padding: 15px;
     background-color: transparent;
     border: #ffffff solid 1px;
+    margin-right: 13.5px;
+    width: 50px;
+    height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    padding: 0; 
 }
 
 .cart-button {
@@ -275,7 +287,7 @@ footer {
     bottom: 24%;
     left: 12%;
     border: #ffffff solid 1px;
-    padding: 15px 22px;
+    padding: 15px 21px;
 }
 
 .cart-button img {
@@ -292,8 +304,4 @@ footer {
 
 .card-additional-info  {
     display: none;
-}
-
-.product-card:hover .card-additional-info {
-    display: block;
 }
