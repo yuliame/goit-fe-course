@@ -16,7 +16,6 @@ body {
     float:left;
     text-transform: uppercase;
     padding-top: 32px;
-    padding-bottom: 18px;
 }
 
 .logo:first-letter {
@@ -28,7 +27,7 @@ body {
 nav {
     overflow: hidden;
     padding-top: 38px;
-    padding-bottom: 30px;
+    padding-bottom: 34px;
 }
 
 .menu-list {
