@@ -1,0 +1,38 @@
+ul li{
+    display: inline-block;
+    width: 210px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+header {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    text-align: center;
+}
+
+div {
+    display: inline-block;
+    width: 450px;
+    height: 481px;
+    margin-top: 50px;
+}
+
+main {
+    width: 100%;
+}
+
+h4 {
+    text-align: left;
+}
+
+.wrapper {
+    display: block; 
+    width: 960px;
+    margin: 0 auto;
+}
