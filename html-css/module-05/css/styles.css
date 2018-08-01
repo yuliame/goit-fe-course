@@ -4,21 +4,9 @@ body {
 
 }
 
-.wrapper {
-    max-width: 1600px;
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-header {
-    max-height: 91px;
-    height: 100%;
+.logo-and-nav {
     max-width: 1120px;
-    width: 100%;
     margin: 0 auto;
-    line-height: 97px;
-    overflow: hidden;
 }
 
 .logo {
@@ -27,8 +15,8 @@ header {
     font-weight: 300;
     float:left;
     text-transform: uppercase;
-    margin:0;
-    line-height: 91px;
+    padding-top: 32px;
+    padding-bottom: 18px;
 }
 
 .logo:first-letter {
@@ -39,13 +27,15 @@ header {
 
 nav {
     overflow: hidden;
+    padding-top: 38px;
+    padding-bottom: 30px;
 }
 
 .menu-list {
     padding: 0;
     float: right;
     margin: 0;
-    overflow: hidden;
+    clear: both;
 }
 
 .menu-item {
@@ -57,7 +47,6 @@ nav {
     font-weight: 700;
     text-transform: uppercase;
     color: #0f0101;
-    line-height: 91px;
 }
 
 .menu-item:last-child {
@@ -74,19 +63,25 @@ a {
 }
 
 .slider {
-    margin: 0 auto;
-    position: relative;
-    font-size: 0;
+    background-image: url(../img/slide4.png);
+    height: 600px;
+    width: 1600px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 
-.slider-image {
-    font-size: 0;
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.slider-content {
+    display: inline-block;
 }
 
 .slider-text {
-    position: absolute;
-    bottom: 46%;
-    right: 27%;
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     color: #ffffff;
@@ -99,30 +94,30 @@ h2 {
     margin-bottom: 18px;
 }
 
-p {
+.slider-content p {
     font-size: 23px;
     font-weight: 200;
     margin: 0;
+    text-align: left;
 }
 
 
 .previous {
     position: absolute;
     left: 15%;
-    bottom: 45%;
+    bottom: 8%;
 }
 
 .next {
     position: absolute;
     right: 15%;
-    top: 38%;
+    bottom: 8%;
 }
 
 button {
     border: none;
     background-color: #55a290;
     padding: 32px 41px;
-    text-align: center;
     text-decoration: none;
     outline: none;
     cursor: pointer;
@@ -133,6 +128,7 @@ button:active {
 }
 .new-collection {
     background-color: #e9f0fd;
+    background-repeat: repeat-x;
     padding-bottom: 100px;
     
 }
