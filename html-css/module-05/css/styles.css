@@ -26,9 +26,10 @@ body {
 
 nav {
     overflow: hidden;
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
+
 
 .menu-list {
     padding: 0;
