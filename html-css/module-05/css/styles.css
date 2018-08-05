@@ -286,7 +286,7 @@ button:active {
     bottom: 39%;
     left: 17%;
     border: #ffffff solid 1px;
-    padding: 11px 14px;
+    padding: 11px 15px;
     cursor: pointer;
 }
 
@@ -321,6 +321,8 @@ footer {
     color: #fefefe;
 }
 
-.company-name {
+.company-info a {
     color: #1abc9c;
+    outline: none;
+    text-decoration: none;
 }
