@@ -38,7 +38,6 @@ ul {
     width: 100%;
     height: 3px;
     background-color: #f38181;
-
 }
 
 .menu-item:last-child {
@@ -53,14 +52,11 @@ ul {
     font-weight: 500;
 }
 
-.menu-item:hover.menu-item::after {
-    display: block;
-    transition: 200ms;
-}
-
+.menu-item:hover.menu-item::after,
 .menu-item a:hover {
+    display: block;
     color: #f38181;
-    transition: 200ms;
+    transition: all, 0.2s linear;
 }
 
 .logo {
@@ -154,6 +150,12 @@ h3 {
     align-items:
 }
 
+.service-description p{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #666666;
+}
+
 .first-line {
     margin-bottom: 103px;
 }
@@ -162,13 +164,16 @@ h3 {
     padding-bottom: 100px;
 }
 
+.team {
+    padding-bottom: 60px;
+}
+
 h4 {
     margin-bottom: 10px;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
-    color: #666666;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .team-description {
@@ -179,4 +184,156 @@ h4 {
     max-width: 940px;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 78px;
+}
+
+.team-members {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.member-card {
+    position: relative;   
+}
+
+.member-card:hover .member-photo {
+    transform: translate(-10px,-10px);
+}
+
+.member-photo {
+    position: relative;
+    max-width: 100%;
+    z-index: 0;
+    font-size: 0;
+    margin-bottom: 30px;
+    transition: all 0.2s linear;
+}
+
+.member-photo::before{
+    content: '';
+    background: linear-gradient(to bottom,#f38181,#fce38a);
+    width: 100%;
+    height:100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0.7;
+    display: none;
+    box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+}
+
+.social-networks {
+    transition: all 0.2s linear;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 36%;
+    left: 15%;
+    display: none;
+    z-index: 2;
+}
+
+.network-item {
+    width: 58px;
+    height: 58px;
+    background-color: #fce38a;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+.network-item:last-child {
+    margin-right:0;
+}
+
+.network-item:hover {
+    background-color: #95e1d3;
+    transition: all, 0.2s linear;
+}
+
+.member-name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.member-sphere {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    font-weight: 100;
+}
+
+.member-card:hover .member-photo::before {
+    display: block;
+}
+
+.member-card:hover .social-networks {
+    display: flex;
+}
+
+.company-info a {
+    outline: none;
+    text-decoration: none;
+    color: none;
+    color:#f38181;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 0;
+    border-top: #e5e5e5 1px solid;
+}
+
+.company-info {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+.inputs {
+    font-size: 0;
+}
+
+.email-text {
+    border: #e7e7e7 1px solid;
+    padding: 11px 65px 11px 12px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 100;
+    margin-right: 0;
+}
+
+.submit-button {
+    background-color: #95e1d3;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 32px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+.submit-button:hover {
+    background-color: #f38181;
+    transition: all, 0.2s linear;
+}
+
+.submit-button:active {
+    transform: translateX(2px) 
 }
