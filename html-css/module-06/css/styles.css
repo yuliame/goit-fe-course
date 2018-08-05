@@ -38,6 +38,7 @@ ul {
     width: 100%;
     height: 3px;
     background-color: #f38181;
+    transition: all, 0.2s linear;
 }
 
 .menu-item:last-child {
@@ -50,13 +51,13 @@ ul {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 500;
+    transition: all, 0.2s linear;
 }
 
-.menu-item:hover.menu-item::after,
-.menu-item a:hover {
+.menu-item:hover a,
+.menu-item:hover.menu-item::after {
     display: block;
     color: #f38181;
-    transition: all, 0.2s linear;
 }
 
 .logo {
@@ -147,7 +148,6 @@ h3 {
 
 .service-image {
     margin-right: 27px;
-    align-items:
 }
 
 .service-description p{
@@ -313,6 +313,7 @@ footer {
     font-style: italic;
     font-weight: 100;
     margin-right: 0;
+    outline: none;
 }
 
 .submit-button {
