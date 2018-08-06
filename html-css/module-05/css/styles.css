@@ -4,9 +4,12 @@ body {
 
 }
 
-.logo-and-nav {
+nav {
     max-width: 1120px;
     margin: 0 auto;
+    overflow: hidden;
+    padding-top: 36px;
+    padding-bottom: 36px;
 }
 
 .logo {
@@ -24,17 +27,12 @@ body {
     font-weight: 900;
 }
 
-nav {
-    overflow: hidden;
-    padding-top: 36px;
-    padding-bottom: 36px;
-}
-
 
 .menu-list {
     padding: 0;
     float: right;
     margin: 0;
+    padding-top: 9px;
 }
 
 .menu-item {
@@ -63,7 +61,7 @@ a {
 
 .slider {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/slide4.png);
-    height: 600px;
+    padding: 243px 0;
     width: 1600px;
     display: table-cell;
     vertical-align: middle;
@@ -105,13 +103,13 @@ h2 {
 
 .previous {
     position: absolute;
-    left: 15%;
+    left: 16%;
     bottom: 40%;
 }
 
 .next {
     position: absolute;
-    right: 15%;
+    right: 16%;
     bottom: 40%;
 }
 
@@ -292,7 +290,7 @@ button:active {
 
 .cart-button:hover {
     background-color: #1abc9c;
-    border: none;
+    border: 1px solid #1abc9c;
 }
 
 .cart-button img {
@@ -305,7 +303,7 @@ button:active {
 
 .favourite:hover , .arrows-button:hover , .time-button:hover {
     background-color: #1abc9c;
-    border: none;
+    border: 1px solid #1abc9c;
 }
 
 footer {
