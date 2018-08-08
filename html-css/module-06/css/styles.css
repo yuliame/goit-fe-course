@@ -4,8 +4,7 @@
 }
 
 .wrapper {
-    max-width: 1201px;
-    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -13,19 +12,18 @@
     text-decoration: none;
     font-family: "Monserrat", sans-serif;
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 700;
     color: #95e1d3;
 }
 
-ul {
+.menu-list {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
+    width: 484px;
 }
 
 .menu-item {
     list-style: none;
-    margin-right: 54px;
     text-transform: uppercase;
     position: relative;
 }
@@ -60,43 +58,33 @@ ul {
     color: #f38181;
 }
 
-.logo {
-    display: flex;
-    justify-content: flex-start;
-}
-
 .main-menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    line-height: 59px;
-    padding-bottom: 96px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 h3 {
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-weight: 400;
+    text-align: center;
     color: #333333;
     margin-bottom: 8px;
-}
-
-.section-name {
-    padding-bottom: 100px;
 }
 
 .section-title {
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
     text-transform: uppercase;
-    font-weight: 900;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-weight: 700;
+    text-align: center;
     color: #333333;
     position: relative;
+    margin-bottom: 102px;
 }
 
 .section-title::after {
@@ -104,10 +92,15 @@ h3 {
     display: block;
     position: absolute;
     top: 73px;
+    left: 574px;
     width: 60px;
     height: 3px;
     background-color: #f38181;
 
+}
+
+.services {
+    padding-bottom: 90px;
 }
 
 .services-provided {
@@ -115,39 +108,16 @@ h3 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    list-style: none;
+    height: 235px;
+    align-content: space-between;
 }
 
-.first-line {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.second-line {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.service-type {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-right: 66px;
-    max-width: 334px;
-    width: 100%;
-}
-
-.service-type:nth-child(3) {
-    margin-right: 0;
-}
-
-.service-type:nth-child(6) {
-    margin-right: 0;
-}
-
-.service-image {
-    margin-right: 27px;
+.service-description{
+    max-width: 306px;
+    width: 33%;
+    position: relative;
+    margin-left: 90px;
 }
 
 .service-description p{
@@ -156,12 +126,58 @@ h3 {
     color: #666666;
 }
 
-.first-line {
-    margin-bottom: 103px;
+.item-1::before {
+    content: url(../img/ALARM.png);
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    left: -62px;
 }
 
-.second-line {
-    padding-bottom: 100px;
+.item-2::before {
+    content: url(../img/LINE\ GRAPH.png);
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    left: -62px;
+}
+
+.item-3::before {
+    content: url(../img/COMPUTER\ _\ OK.png);
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    left: -62px;
+}
+
+.item-4::before {
+    content: url(../img/BOOK\ 2.png);
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    left: -62px;
+}
+
+.item-5::before {
+    content: url(../img/HOME.png);
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    left: -62px;
+}
+
+.item-6::before {
+    content: url(../img/IMAGE.png);
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    left: -62px;
 }
 
 .team {
@@ -194,10 +210,12 @@ h4 {
 }
 
 .member-card {
-    position: relative;   
+    position: relative; 
+    transition: all 0.2s linear;  
 }
 
-.member-card:hover .member-photo {
+.member-card:hover.member-card,
+.member-card:hover.member-photo {
     transform: translate(-10px,-10px);
 }
 
@@ -225,7 +243,6 @@ h4 {
 }
 
 .social-networks {
-    transition: all 0.2s linear;
     flex-direction: row;
     justify-content: center;
     vertical-align: middle;
