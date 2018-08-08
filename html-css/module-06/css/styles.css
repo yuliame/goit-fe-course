@@ -209,13 +209,8 @@ h4 {
     justify-content: space-between;
 }
 
-.member-card {
-    position: relative; 
-    transition: all 0.2s linear;  
-}
-
-.member-card:hover.member-card,
-.member-card:hover.member-photo {
+.card-effects:hover.card-effects,
+.card-effects:hover.member-photo {
     transform: translate(-10px,-10px);
 }
 
@@ -226,6 +221,11 @@ h4 {
     font-size: 0;
     margin-bottom: 30px;
     transition: all 0.2s linear;
+}
+
+.card-effects {
+    transition: all 0.2s linear;
+    position: relative;
 }
 
 .member-photo::before{
@@ -289,11 +289,11 @@ h4 {
     font-weight: 100;
 }
 
-.member-card:hover .member-photo::before {
+.card-effects:hover .member-photo::before {
     display: block;
 }
 
-.member-card:hover .social-networks {
+.card-effects:hover .social-networks {
     display: flex;
 }
 
