@@ -109,7 +109,7 @@ h3 {
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
-    height: 235px;
+    min-height: 235px;
     align-content: space-between;
 }
 
@@ -117,7 +117,7 @@ h3 {
     max-width: 306px;
     width: 33%;
     position: relative;
-    margin-left: 90px;
+    padding-left: 86px;
 }
 
 .service-description p{
@@ -132,7 +132,7 @@ h3 {
     display: block;
     width: 32px;
     height: 32px;
-    left: -62px;
+    left: 25px;
 }
 
 .item-2::before {
@@ -141,7 +141,7 @@ h3 {
     display: block;
     width: 32px;
     height: 32px;
-    left: -62px;
+    left: 25px;
 }
 
 .item-3::before {
@@ -150,7 +150,7 @@ h3 {
     display: block;
     width: 32px;
     height: 32px;
-    left: -62px;
+    left: 25px;
 }
 
 .item-4::before {
@@ -159,7 +159,7 @@ h3 {
     display: block;
     width: 32px;
     height: 32px;
-    left: -62px;
+    left: 25px;
 }
 
 .item-5::before {
@@ -168,7 +168,7 @@ h3 {
     display: block;
     width: 32px;
     height: 32px;
-    left: -62px;
+    left: 25px;
 }
 
 .item-6::before {
@@ -177,7 +177,7 @@ h3 {
     display: block;
     width: 32px;
     height: 32px;
-    left: -62px;
+    left: 25px;
 }
 
 .team {
@@ -209,23 +209,25 @@ h4 {
     justify-content: space-between;
 }
 
-.card-effects:hover.card-effects,
-.card-effects:hover.member-photo {
+.card-effects:hover.card-effects {
     transform: translate(-10px,-10px);
 }
 
 .member-photo {
     position: relative;
-    max-width: 100%;
     z-index: 0;
     font-size: 0;
-    margin-bottom: 30px;
-    transition: all 0.2s linear;
+}
+
+.card-background {
+    background: #9ce3d6;
 }
 
 .card-effects {
     transition: all 0.2s linear;
     position: relative;
+    margin-bottom: 30px;
+    background: #95e1d3;
 }
 
 .member-photo::before{
@@ -239,13 +241,11 @@ h4 {
     z-index: 1;
     opacity: 0.7;
     display: none;
-    box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+    transition: all 0.2s linear;
 }
 
 .social-networks {
-    flex-direction: row;
     justify-content: center;
-    vertical-align: middle;
     position: absolute;
     top: 44%;
     left: 18%;
@@ -289,7 +289,8 @@ h4 {
     font-weight: 100;
 }
 
-.card-effects:hover .member-photo::before {
+.card-effects:hover .member-photo::before,
+.card-effects:hover .member-photo::after {
     display: block;
 }
 
@@ -318,13 +319,13 @@ footer {
     font-size: 14px;
 }
 
-.inputs {
+form {
     font-size: 0;
 }
 
 .email-text {
     border: #e7e7e7 1px solid;
-    padding: 11px 65px 11px 12px;
+    padding: 10px 65px 11px 12px;
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-style: italic;
