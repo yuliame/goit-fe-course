@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo a {
+    text-decoration: none;
+    font-family: 'wisdom_scriptregular', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: #fed136;
+}
+
+.main-menu, .services {
+    max-width: 940px;
+    margin: 0 auto;
+}
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    width: 485px;
+}
+
+.menu-item {
+    list-style: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.menu-item a {
+    color: #222222;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all, 0.2s linear;
+}
+
+.menu-item:hover a {
+    display: block;
+    color: #fed136;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.services {
+    padding-bottom: 100px;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    font-family: "droid-serif", serif;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    color: #777777;
+    margin-bottom: 170px;
+}
+
+.services-provided {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    color: #777777;
+
+}
+
+.item-1, .item-2, .item-3 {
+    width: 265px;
+    position: relative;
+}
+
+.item-1::before {
+    content: url(../img/Icon-Basket.jpg);
+    position: absolute;
+    bottom: 115px;
+    left: 90px;
+}
+
+.item-2::before {
+    content: url(../img/Icon-Laptop.jpg);
+    position: absolute;
+    bottom: 115px;
+    left: 90px;
+}
+
+.item-3::before {
+    content: url(../img/Icon-Locked.jpg);
+    position: absolute;
+    bottom: 115px;
+    left: 90px;
+}
+
+.contact-us {
+    background: url(../img/Map\ Image.jpg) center;
+    height: 675px;
+}
+
+.contact-us-title-name {
+    color: #ffffff;
+    padding-top: 100px;
+}
+
+.section-sub-title {
+    margin-bottom: 80px;
+    font-family: "droid-serif", serif;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    color: #777777;
+}
+
+.client-details {
+    display: flex;
+    justify-content: space-around;
+    max-width: 940px;
+    margin: 0 auto;
+    font-size: 0;
+    margin-bottom: 30px;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input[type=text], input[type=email] {
+    box-sizing: border-box;
+    padding: 15px 245px 15px 20px;
+    border-radius: 3px;
+    outline: none; 
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #bbbbbb;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    border:2px solid transparent;
+}
+
+textarea {
+    box-sizing: border-box;
+    padding: 20px 255px 160px 20px;
+    border-radius: 3px;
+    border: none;
+    outline: none; 
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #bbbbbb;
+    text-transform: uppercase;
+    border:2px solid transparent;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 45px;
+    outline: none;
+    background-color: #fed136;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.name:valid:focus {
+    border:2px solid #278f35;
+    border-radius: 2px;
+}
+
+.name:invalid:focus {
+    border:2px solid #c51616;
+    border-radius: 2px;
+}
+
+.email:valid:focus {
+    border:2px solid #278f35;
+    border-radius: 2px;
+}
+
+.email:invalid:focus {
+    border:2px solid #c51616;
+    border-radius: 2px;
+}
+
+.message:valid:focus {
+    border:2px solid #278f35;
+    border-radius: 2px;
+}
+
+.message:invalid:focus {
+    border:2px solid #c51616;
+    border-radius: 2px;
+}
