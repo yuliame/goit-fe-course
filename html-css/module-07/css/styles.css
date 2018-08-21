@@ -162,34 +162,43 @@ h3 {
 }
 
 .personal-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: block;
 }
 
-input[type=text], input[type=email] {
+.name, .email, .subject {
     box-sizing: border-box;
     padding: 15px;
     border-radius: 3px;
-    outline: none; 
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     color: #bbbbbb;
-    outline: none;
     border: none;
     outline:2px solid transparent;
+    margin-bottom: 34.5px;
 }
+
+.subject {
+    margin-bottom: 0;
+}
+
 
 textarea {
     box-sizing: border-box;
     padding: 15px;
     border-radius: 3px;
     border: none;
-    outline: none; 
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     color: #bbbbbb;
     outline:2px solid transparent;
+}
+
+input:focus {
+    outline-offset: 0;
+}
+
+textarea:focus {
+    outline-offset: 0;
 }
 
 button {
@@ -214,27 +223,27 @@ button:active {
 
 .name:valid {
     outline:2px solid #278f35;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .name:invalid {
     outline:2px solid #c51616;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .email:valid {
     outline:2px solid #278f35;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .email:invalid {
     outline:2px solid #c51616;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .message:valid {
     outline:2px solid #278f35;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .message:invalid {
