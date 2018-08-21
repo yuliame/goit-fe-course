@@ -70,20 +70,20 @@
         <div class="services">
             <h3>Services</h3>
             <h4 class="sub-title">Proin iaculis purus consequat sem cure</h4>
-            <div class="services-provided">
-                <div class="item-1">
+            <ul class="services-provided">
+                <li class="item-1">
                     <h4 class="service-title">E-commerce</h4>
                     <p class="service-description">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-                </div>
-                <div class="item-2">
+                </li>
+                <li class="item-2">
                     <h4 class="service-title">Responsive-Web</h4>
                     <p class="service-description">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-                </div>
-                <div class="item-3">
+                </li>
+                <li class="item-3">
                     <h4 class="service-title">Web-security</h4>
                     <p class="service-description">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </div>
     <form class="contact-us">
@@ -93,12 +93,12 @@
         </div>    
         <div class="client-details">
                 <div class="personal-info">
-                    <input class="name" type="text" name="Your name" placeholder="Your name*" required>
-                    <input class="email" type="email" name="Your email" placeholder="Your email*" required>
-                    <input class="subject" type="text" name="Subject" placeholder="Subject">
+                    <input class="name" type="text" name="username" placeholder="YOUR NAME" required maxlength="60" size="50" minlength="2" pattern="[A-Za-z ']+">
+                    <input class="email" type="email" name="Your email" placeholder="YOUR EMAIL" required maxlength="265">
+                    <input class="subject" type="text" name="Subject" placeholder="SUBJECT">
                 </div>    
                 <div>
-                        <textarea class="message" name="Your message" placeholder="Your message*" required></textarea>
+                        <textarea class="message" name="Your message" placeholder="YOUR MESSAGE" required rows="11" cols="51" maxlength="150" minlength="10"></textarea>
                 </div>
         </div>
         <button type="submit">Send Message</button>
