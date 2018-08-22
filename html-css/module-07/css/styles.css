@@ -60,12 +60,12 @@
 }
 
 .services {
-    padding-bottom: 100px;
+    padding-bottom: 115px;
 }
 
 h3 {
     font-family: "Montserrat", sans-serif;
-    font-size: 40px;
+    font-size: 38px;
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
@@ -79,19 +79,19 @@ h3 {
     text-align: center;
     font-weight: 400;
     color: #777777;
+    margin-bottom: 50px;
 }
 
 .services-provided {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding-top: 160px;
 }
 
 .service-title {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 700;
     color: #222222;
     text-align: center;
     margin-bottom: 10px;
@@ -101,33 +101,36 @@ h3 {
     font-family: "Roboto-slab", serif;
     font-size: 14px;
     color: #777777;
+    text-align: center;
+    line-height: 23px;
 
 }
 
 .item-1, .item-2, .item-3 {
-    width: 265px;
+    width: 290px;
     position: relative;
+    padding-top: 115px;
 }
 
 .item-1::before {
     content: url(../img/Icon-Basket.jpg);
     position: absolute;
     bottom: 115px;
-    left: 90px;
+    left: 100px;
 }
 
 .item-2::before {
     content: url(../img/Icon-Laptop.jpg);
     position: absolute;
     bottom: 115px;
-    left: 90px;
+    left: 105px;
 }
 
 .item-3::before {
     content: url(../img/Icon-Locked.jpg);
     position: absolute;
     bottom: 115px;
-    left: 90px;
+    left: 110px;
 }
 
 .contact-us {
@@ -135,11 +138,11 @@ h3 {
     background-size: 100%;
     max-height: 675px;
     padding-bottom: 50px;
+    padding-top: 100px;
 }
 
 .contact-us-title-name {
     color: #ffffff;
-    padding-top: 100px;
 }
 
 .section-sub-title {
