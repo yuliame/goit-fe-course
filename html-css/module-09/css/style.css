@@ -4,15 +4,19 @@
     font-family: "Montserrat", sans-serif;
 }
 
+.container {
+    max-width: 100%;
+    margin-bottom: 2em;
+}
+
 .login-menu {
     list-style: none;
     text-align: center;
 }
 
 header {
-    background: url(../img/back3.png) no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url(../img/back1.png) no-repeat;
+    height: 100%;
     padding-top: 1em;
     padding-bottom: 8.7em;
     
@@ -22,15 +26,11 @@ header {
     margin-bottom: 2em;
 }
 
-nav {
-    margin-bottom: 7em;
-}
-
-.menu-item {
+.login__menu__item {
     display: inline-block;
 }
 
-.menu-item {
+.login__menu__item button {
     padding: 8px 15px;
     outline: none;
     border: 2px solid transparent;
@@ -39,18 +39,19 @@ nav {
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
+    margin-bottom: 8em;
 }
 
-.menu-item:hover {
+.login__menu__item button:hover {
     border: 2px solid #ffffff;
     border-radius: 40px;
 }
 
-.menu-item:active {
+.login__menu__item button:active {
     transform: translateY(.2em);
 }
 
-h1 {
+.site-name {
     color: #ffffff;
     font-size: 20px;
     margin-bottom: 1.5em;
@@ -59,30 +60,31 @@ h1 {
 
 a {
     text-decoration: none;
-    align-self: center;
 }
 
-h2 {
+.header__text-title {
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 52px;
     margin-bottom: .2em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+
 }
 
-p {
+.header__text-add {
     color: #ffffff;
-    font-size: 18px;
-    margin: 0 auto .6em auto;
+    font-size: 24px;
+    margin-bottom: 35px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    width: 85%;
 }
 
-.header-text {
+.header__text {
     text-align: center;
 }
 
-.find-btn {
+.header__text-find-btn {
     margin: 0 auto;
     background: #ff4e50;
     padding: 1em 4em;
@@ -95,20 +97,19 @@ p {
     cursor: pointer;
 }
 
-.find-btn:active {
+.header__text-find-btn:active {
     transform: translateY(.2em);
 }
 
 .partners {
     padding-top: 4em;
     text-align: center;
-    padding-bottom: 2em;
 }
 
 h3 {
     font-weight: 600;
     font-size: 14px;
-    margin: 0 auto .8em auto;
+    margin-bottom: .8em;
 }
 
 h4 {
@@ -132,29 +133,19 @@ img {
     color: #000000;
     font-size: 22px;
     margin: 0 auto .5em auto;
-}
-.partner {
-    margin-bottom: 1.8em;
+    width: 85%;
 }
 
-.item-1 {
+.partner {
     position: relative;
-}
-.item-2 {
-    position: relative;
-}
-.item-3 {
-    position: relative;
-}
-.item-4 {
-    position: relative;
+    margin-bottom: 1.8em; 
 }
 
 .item-1::before {
     content: url(../img/partner1-add.png);
     position: absolute;
-    left: 58%;
-    bottom: 35%;
+    left: 56%;
+    bottom: 38%;
     border: 5px solid #ffffff;
     border-radius:60px;
     font-size: 0;
@@ -163,8 +154,8 @@ img {
 .item-2::before {
     content: url(../img/partner2-add.png);                                                                                                                                 
     position: absolute;
-    left: 58%;
-    bottom: 45%;
+    left: 57%;
+    bottom: 47%;
     border: 5px solid #ffffff;
     border-radius:60px;
     font-size: 0;
@@ -173,8 +164,8 @@ img {
 .item-3::before {
     content: url(../img/partner3-add.png);                                                                                                                                 
     position: absolute;
-    left: 57%;
-    bottom: 37%;
+    left: 56%;
+    bottom: 38%;
     border: 5px solid #ffffff;
     border-radius:60px;
     font-size: 0;
@@ -183,8 +174,8 @@ img {
 .item-4::before {
     content: url(../img/partner4-add.png);                                                                                                                              
     position: absolute;
-    left: 57%;
-    bottom: 36%;
+    left: 56%;
+    bottom: 38%;
     border: 5px solid #ffffff;
     border-radius:60px;
     font-size: 0;
@@ -213,20 +204,18 @@ img {
         justify-content: space-between;
         flex-direction: row-reverse;
         width:87%;
-        margin: 0 auto 9em auto;
+        margin: 0 auto 8em auto;
     }
 
     header {
+        background: url(../img/back2.png) no-repeat;
+        height:100%;
         max-height: 702px;
         padding-bottom: 15em;
         padding-top: 3em;
     }
 
-    nav {
-        margin-bottom: 0;
-    }
-
-    .menu-item button {
+    .login__menu__item button {
         margin: 0;
     }
 
@@ -243,10 +232,9 @@ img {
     
     p {
         font-size: 24px;
-        margin-bottom: 1.2em;
     }
 
-    .find-btn {
+    .header__text-find-btn {
         padding: .7em 2em;
     }
 
@@ -263,12 +251,12 @@ img {
         width:100%;
         margin: 0 auto;
         list-style: none;
-        margin-bottom: 2.5em;
+        margin-bottom: 2em;
     }
 
     .partner {
         width:35%;
-        margin-bottom: 2.3em;
+        margin-bottom: 3em;
     }
 
     .item-2 {
@@ -289,26 +277,6 @@ img {
         order:1;
     }
 
-    .item-1::before {
-        bottom: 43%;
-        left: 59%; 
-      }
-  
-      .item-2::before {
-        bottom: 46%;
-        left: 59%;
-        }
-  
-      .item-3::before {
-        bottom: 44%;
-        left: 59%;
-      }
-  
-      .item-4::before {
-        bottom: 45%;
-        left: 59%; 
-      }
-
     .load-partners {
         padding: .6em 2em;
     }
@@ -317,6 +285,8 @@ img {
 @media (min-width: 1024px) {
 
     header {
+        background: url(../img/back3.png) no-repeat;
+        width: 100%;
         background-position: center;
         padding-bottom: 15em;
         padding-top: 2em;
@@ -334,12 +304,11 @@ img {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        margin-bottom: 2.5em;
+        margin-bottom: 1.5em;
     }
 
     .partner {
         width: 15%;
-        margin-bottom: 0;
     }
 
     h2 {
@@ -351,22 +320,22 @@ img {
     }
 
     .item-1::before {
-      bottom: 46%;
-      left: 61%; 
+      bottom: 36%;
+      left: 58%; 
     }
 
     .item-2::before {
-      bottom: 46%;
+      bottom: 49%;
       left: 61%;
       }
 
     .item-3::before {
-      bottom: 46%;
+      bottom: 36%;
       left: 60%;
     }
 
     .item-4::before {
-      bottom: 46%;
+      bottom: 48%;
       left: 61%; 
     }
 }
