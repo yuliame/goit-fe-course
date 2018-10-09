@@ -60,12 +60,6 @@ nav {
     letter-spacing: .02em;
 }
 
-.site-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 a {
     text-decoration: none;
 }
@@ -236,8 +230,6 @@ img {
 
 @media(min-width:768px) {
     .main-info{
-        justify-content: space-between;
-        flex-direction: row-reverse;
         margin: 0 auto 8em auto;
     }
 
@@ -279,7 +271,6 @@ img {
     }
 
     .partners ul{
-        justify-content: center;
         list-style: none;
         margin-bottom: 2.5em;
     }
