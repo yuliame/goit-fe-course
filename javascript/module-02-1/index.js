@@ -10,12 +10,11 @@ do {
     } else {
         alert("Было введено не число, попробуйте еще раз");;
     }
-} while(userInput);
-
-for(const value of numbers) {
-    total += value;
-  }
+} while(userInput !== null);
 
 if (numbers.length > 0 ) {
+    for(const value of numbers) {
+        total += value;
+    }
     alert(`Общая сумма чисел равна ${total}`);
 }
