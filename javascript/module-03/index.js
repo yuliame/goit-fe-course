@@ -1,34 +1,28 @@
 const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
+const loginExists = "Такой логин уже используется!";
+const loginError = "Ошибка! Логин должен быть от 4 до 16 символов";
+const loginAdded = "Логин успешно добавлен!";
 
+const isLoginValid = (login) => {
+    return login.length >= 4 && login.length <= 14;
+}
 
-const isLoginValid = function(login) {
-    if (login.length >= 4 && login.length <= 14) {
-        return true;
-    }
+const isLoginUnique = (allLogins, login) => {
+    return allLogins.includes(login);
+}
 
-    return false;
-};
-
-const isLoginUnique = function(allLogins, login) {
-    if (allLogins.includes(login)) {
-      return false;
-    }
-
-    return true;
-};
-
-const addLogin = function(login) {
-  if (isLoginValid(login) === false) {
-      return "Ошибка! Логин должен быть от 4 до 16 символов";
+const addLogin = (login) => {
+  if (!isLoginValid(login)) {
+      return loginError;
   } 
 
-  if (isLoginUnique(logins, login) === false) {
-      return "Такой логин уже используется!";
+  if (isLoginUnique(logins, login)) {
+      return loginExists;
   }
   
   logins.push(login);
-  
-  return "Логин успешно добавлен!";
+
+  return loginAdded;  
 };
 
 console.log(addLogin('Ajax')); // 'Логин успешно добавлен!'
